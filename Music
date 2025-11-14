@@ -1,0 +1,62 @@
+./json2midi --input input.json --output output.mid
+{
+  "tempo": 88,
+  "key": "A minor",
+  "bars": 80,
+  "tracks": [
+    {
+      "name": "Drums",
+      "type": "drum",
+      "pattern": [
+        {"bar": 1, "note": 36, "name": "Kick", "start_beat": 0, "duration": 0.25, "velocity": 100},
+        {"bar": 1, "note": 38, "name": "Snare", "start_beat": 1, "duration": 0.25, "velocity": 100},
+        {"bar": 1, "note": 42, "name": "HiHat", "start_beat": 0.25, "duration": 0.25, "velocity": 80},
+        {"bar": 1, "note": 42, "name": "HiHat", "start_beat": 1.25, "duration": 0.25, "velocity": 80},
+
+        {"bar": 2, "note": 36, "name": "Kick", "start_beat": 0, "duration": 0.25, "velocity": 100},
+        {"bar": 2, "note": 38, "name": "Snare", "start_beat": 1, "duration": 0.25, "velocity": 100},
+        {"bar": 2, "note": 42, "name": "HiHat", "start_beat": 0.25, "duration": 0.25, "velocity": 90},
+        {"bar": 2, "note": 42, "name": "HiHat", "start_beat": 1.25, "duration": 0.25, "velocity": 90}
+
+        // ... continue pattern with hi-hat rolls and snare variations for 80 bars
+      ]
+    },
+    {
+      "name": "Modern 808",
+      "type": "synth",
+      "pattern": [
+        {"bar": 1, "note": 45, "start_beat": 0, "duration": 1, "velocity": 110},
+        {"bar": 1, "note": 45, "start_beat": 1, "duration": 1, "velocity": 110},
+        {"bar": 1, "note": 47, "start_beat": 2, "duration": 1, "velocity": 110},
+        {"bar": 1, "note": 45, "start_beat": 3, "duration": 1, "velocity": 110},
+
+        {"bar": 2, "note": 45, "start_beat": 0, "duration": 1, "velocity": 110},
+        {"bar": 2, "note": 47, "start_beat": 1, "duration": 1, "velocity": 110}
+
+        // ... continue 808 slides and variations for 80 bars
+      ]
+    },
+    {
+      "name": "Pad",
+      "type": "pad",
+      "pattern": [
+        {"bar": 1, "note": 69, "start_beat": 0, "duration": 2, "velocity": 60},
+        {"bar": 1, "note": 67, "start_beat": 2, "duration": 2, "velocity": 60},
+        {"bar": 3, "note": 65, "start_beat": 0, "duration": 2, "velocity": 60}
+
+        // ... continue sustained chords with slight variations for 80 bars
+      ]
+    },
+    {
+      "name": "Bell",
+      "type": "bell",
+      "pattern": [
+        {"bar": 1, "note": 76, "start_beat": 0, "duration": 0.5, "velocity": 70},
+        {"bar": 2, "note": 74, "start_beat": 1, "duration": 0.5, "velocity": 70},
+        {"bar": 3, "note": 72, "start_beat": 2, "duration": 0.5, "velocity": 70}
+
+        // ... add sparse melodic bell hits, reverb-style, across 80 bars
+      ]
+    }
+  ]
+}
